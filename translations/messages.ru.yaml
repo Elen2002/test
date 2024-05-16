@@ -1,0 +1,7 @@
+form:
+  firstname: "Имя"
+  lastname: "Фамилия"
+  description: "Описание"
+  submit: "Создавать"
+Lang: 'RU'
+

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="p-2 d-flex justify-content-center">
+    <div class="card p-3 col-md-6">
+        <div class="dropdown d-flex justify-content-end">
+            <a class="btn btn-secondary-outline dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               {% trans %}Lang{% endtrans %}
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/en">EN</a></li>
+                <li><a class="dropdown-item" href="/ru">RU</a></li>
+                <li><a class="dropdown-item" href="/ru2">RU2</a></li>
+            </ul>
+        </div>
+        {{ form_start(form) }}
+        {{ form_row(form.firstname) }}
+        {{ form_row(form.lastname) }}
+        {{ form_row(form.description) }}
+        {{ form_end(form) }}
+    </div>
+    </div>
+{% endblock %}
