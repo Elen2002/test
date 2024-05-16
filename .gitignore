@@ -7,7 +7,6 @@
 /public/bundles/
 /var/
 /.idea/
-/node_modules/
 /migrations/
 /vendor/
 ###< symfony/framework-bundle ###
